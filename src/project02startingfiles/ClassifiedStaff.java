@@ -8,22 +8,22 @@ package project02startingfiles;
  *
  * @author S545586
  */
-public class StudentEmployee extends Employee {
+public class ClassifiedStaff extends Employee {
 
-    private int hoursWorked;
-    private boolean isWorking;
-    private double payRate;
+    private double weeklySalary;
+    private String division;
 
-    public StudentEmployee(String employeeName, int employeeId, int hoursWorked, boolean isWorking, double payrate) {
+    public ClassifiedStaff(String employeeName, int employeeId, boolean isWorking, double weeklySalary, String division) {
         super(employeeName, employeeId, isWorking);
-        this.payRate = payRate;
+        this.weeklySalary = weeklySalary;
+        this.division = division;
     }
 
     public String toString() {
-        return "studentemployee";
+        return "classifiedstaff";
     }
 
     public double getPay() {
-        return hoursWorked * payRate;
+        return weeklySalary * 2;
     }
 }
