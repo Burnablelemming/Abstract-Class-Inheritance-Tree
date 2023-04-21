@@ -14,16 +14,22 @@ public class StudentEmployee extends Employee {
     private boolean isWorkStudy;
     private double payRate;
 
-    public StudentEmployee(String employeeName, int employeeId, boolean isWorking, int hoursWorked, boolean isWorkStudy, double payrate) {
+    public StudentEmployee(String employeeName, int employeeId, boolean isWorking, int hoursWorked, boolean isWorkStudy, double payRate) {
         super(employeeName, employeeId, isWorking);
         this.payRate = payRate;
         this.isWorkStudy = isWorkStudy;
+        this.hoursWorked = hoursWorked;
     }
 
     public String toString() {
-        return "studentemployee";
+        return "studentEmployee";
     }
 
+    public double getPayRate() {
+        return this.payRate;
+    }
+
+    @Override
     public double getPay() {
         return hoursWorked * payRate;
     }

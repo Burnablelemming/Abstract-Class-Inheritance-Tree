@@ -53,7 +53,7 @@ public class Project02StartingFiles {
         }
         System.out.println("");
         for (Employee worker : workers) {
-            System.out.println(worker);
+            System.out.println(worker.toString());
         }
         System.out.println("");
         System.out.println("Pay for two-week pay period");
