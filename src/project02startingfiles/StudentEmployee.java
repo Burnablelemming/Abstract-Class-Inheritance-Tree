@@ -22,7 +22,7 @@ public class StudentEmployee extends Employee {
     }
 
     public String toString() {
-        return "studentEmployee";
+        return String.format("%-15s%15d%10b%8d%13b%17.2f", super.getEmployeeName(), super.getEmployeeId(), super.isWorking(), hoursWorked, isWorkStudy, payRate);
     }
 
     public double getPayRate() {

@@ -20,7 +20,7 @@ public class ClassifiedStaff extends Employee {
     }
 
     public String toString() {
-        return "classifiedstaff";
+        return String.format("%-15s%15d%10b%13.2f%25s", super.getEmployeeName(), super.getEmployeeId(), super.isWorking(), weeklySalary, division);
     }
 
     public double getPay() {

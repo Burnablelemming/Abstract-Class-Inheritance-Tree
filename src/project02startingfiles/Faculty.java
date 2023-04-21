@@ -22,7 +22,7 @@ public class Faculty extends Employee {
     }
 
     public String toString() {
-        return "faculty";
+        return String.format("%-15s%15d%10b%14.2f%4d%20s", super.getEmployeeName(), super.getEmployeeId(), super.isWorking(), annualSalary, weeksPerYear, department);
     }
 
     public double getPay() {
